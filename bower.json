@@ -6,6 +6,7 @@
     "zepto": "latest",
     "backbone": "latest",
     "lodash": "latest",
-    "handlebars": "latest"
+    "handlebars": "latest",
+    "foundation": "latest"
   }
 }

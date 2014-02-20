@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
   <head>
-    <title>Mimosa</title>
+    <title>Sexy Microsite</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/css/style.css{{cachebust}}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{#reload}}
       <script src="/socket.io/socket.io.js"></script>
       <script src="/js/reload-client.js"></script>
@@ -21,11 +24,16 @@
   </head>
   <body>
 
-    <p>Welcome to Mimosa</p>
+    <div class="row">
+      <div class="small-8 small-centered columns" id="canvas">
 
-    {{#optimize}}
-    <p>Optimized mode.  You are getting a single RequireJS optimized JavaScript file which includes all the page dependencies.</p>
-    {{/optimize}}
+        <p>Welcome to Mimosa</p>
 
+        {{#optimize}}
+        <p>Optimized mode.  You are getting a single RequireJS optimized JavaScript file which includes all the page dependencies.</p>
+        {{/optimize}}
+
+      </div>
+    </div>
   </body>
 </html>

@@ -2,11 +2,11 @@ exports.config =
   modules: [
     "copy"
     "server"
-    "jshint"
-    "csslint"
+    # "jshint"
+    # "csslint"
     "require"
-    "minify-js"
-    "minify-css"
+    # "minify-js"
+    # "minify-css"
     "live-reload"
     "bower"
     "coffeescript"
@@ -65,6 +65,8 @@ exports.config =
 
   bower:
     watch: true
+    bowerDir:
+      clean: true # When you need to update foundation, set to false and copy the scss/js folder out
 
   coffeescript:
     options:
@@ -73,4 +75,4 @@ exports.config =
 
   handlebars:
     extensions: ["hb"]
-    helpers: ["templates/handlebars-helpers"]
+    helpers: ["hb-helpers"]
