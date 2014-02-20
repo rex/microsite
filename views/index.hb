@@ -25,15 +25,7 @@
   <body>
 
     <div class="row">
-      <div class="small-8 small-centered columns" id="canvas">
-
-        <p>Welcome to Mimosa</p>
-
-        {{#optimize}}
-        <p>Optimized mode.  You are getting a single RequireJS optimized JavaScript file which includes all the page dependencies.</p>
-        {{/optimize}}
-
-      </div>
+      <div class="small-8 small-centered columns" id="canvas"></div>
     </div>
   </body>
 </html>

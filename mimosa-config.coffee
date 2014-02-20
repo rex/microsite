@@ -2,11 +2,11 @@ exports.config =
   modules: [
     "copy"
     "server"
-    # "jshint"
-    # "csslint"
+    "jshint"
+    "csslint"
     "require"
-    # "minify-js"
-    # "minify-css"
+    "minify-js"
+    "minify-css"
     "live-reload"
     "bower"
     "coffeescript"
@@ -53,12 +53,6 @@ exports.config =
       extension: "hb"
       path: "views"
 
-  minifyJS:
-    exclude: [/\.min\./]
-
-  minifyCSS:
-    exclude: [/\.min\./]
-
   liveReload:
     enabled: true
     additionalDirs: ["views"]
@@ -70,7 +64,7 @@ exports.config =
 
   coffeescript:
     options:
-      sourceMap: true
+      # sourceMap: true
       bare: true
 
   handlebars:
