@@ -3,19 +3,19 @@
   <head>
     <title>Mimosa</title>
 
-    <link rel="stylesheet" href="/stylesheets/style.css{{cachebust}}" />
-
+    <link rel="stylesheet" href="/css/style.css{{cachebust}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{#reload}}
       <script src="/socket.io/socket.io.js"></script>
-      <script src="/javascripts/reload-client.js"></script>
+      <script src="/js/reload-client.js"></script>
     {{/reload}}
 
     {{#optimize}}
-      <script src="/javascripts/main-built.js"></script>
+      <script src="/js/main-built.js"></script>
     {{/optimize}}
 
     {{^optimize}}
-      <script src="/javascripts/vendor/requirejs/require.js" data-main="/javascripts/main.js"></script>
+      <script src="/js/vendor/requirejs/require.js" data-main="/js/main.js"></script>
     {{/optimize}}
 
   </head>

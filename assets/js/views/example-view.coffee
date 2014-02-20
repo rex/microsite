@@ -1,4 +1,4 @@
-define ['jquery', 'templates'], ($, templates) ->
+define ['zepto', 'templates'], ($, templates) ->
 
   class ExampleView
 
