@@ -1,3 +1,28 @@
+* {
+  @include font-body;
+}
+
 body {
   background: #eee;
+}
+
+header {
+  background: #d92212;
+  height: 75px;
+  color: #fff;
+
+  .phrase {
+    padding: 15px 0 0 50px;
+
+    h3 {
+      color: #fff;
+      @include font-header;
+    }
+  }
+
+  .showtimes {
+    text-align: right;
+    padding: 30px 10px 0 0;
+    font-size: 0.8em;
+  }
 }

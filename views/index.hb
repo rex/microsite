@@ -7,7 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Montserrat|Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/style.css{{cachebust}}" />
+
     {{#reload}}
       <script src="/socket.io/socket.io.js"></script>
       <script src="/js/reload-client.js"></script>
@@ -25,7 +27,7 @@
   <body>
 
     <div class="row">
-      <div class="small-8 small-centered columns" id="canvas"></div>
+      <div class="small-12 small-centered columns" id="canvas"></div>
     </div>
   </body>
 </html>

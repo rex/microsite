@@ -3,7 +3,7 @@ exports.config =
     "copy"
     "server"
     "jshint"
-    "csslint"
+    # "csslint"
     "require"
     "minify-js"
     "minify-css"
@@ -56,6 +56,14 @@ exports.config =
   liveReload:
     enabled: true
     additionalDirs: ["views"]
+
+  # csslint:
+  #   rules:
+  #     'adjoining-classes': true
+  #     important: true
+
+  # jshint:
+  #   rules: {}
 
   bower:
     watch: true

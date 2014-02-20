@@ -1,0 +1,26 @@
+@mixin font-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+@mixin font-serif {
+  font-family: 'Nixie One', cursive;
+  font-weight: 400;
+}
+
+.font-header {
+  @include font-header;
+}
+
+.font-body {
+  @include font-body;
+}
+
+.font-serif {
+  @include font-serif;
+}
