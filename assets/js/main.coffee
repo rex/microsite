@@ -23,6 +23,5 @@ require
     'foundation'
     'views/main'
   ], ($, a, b, MainView) ->
-    $(document).foundation()
     view = new MainView()
     view.render('#canvas')

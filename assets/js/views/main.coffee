@@ -5,4 +5,6 @@ define ['jquery', 'templates'], ($, templates) ->
     render: (element) ->
       $(element).html templates['page/main']({ working: "Hell to the yeah!" })
 
+      $(document).foundation()
+
   MainView
