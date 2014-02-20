@@ -10,6 +10,9 @@ header {
   background: #d92212;
   height: 75px;
   color: #fff;
+  box-shadow: 0 2px 5px #333;
+  position: relative;
+  z-index: 10;
 
   .phrase {
     padding: 15px 0 0 50px;
@@ -25,4 +28,35 @@ header {
     padding: 30px 10px 0 0;
     font-size: 0.8em;
   }
+}
+
+nav > section > ul > li {
+  text-shadow: 0 1px 2px #222;
+  line-height: 20px;
+
+  a {
+    @include single-transition();
+  }
+}
+
+nav > section > ul > li:before {
+  content: "";
+  float: left;
+  height: 30px;
+  margin-top: 15px;
+  border-right: 1px #eee solid;
+  opacity: 0.7;
+}
+
+nav > section > ul > li:after {
+  content: "";
+  float: right;
+  height: 30px;
+  margin-top: -45px;
+  border-right: 1px #222 solid;
+  opacity: 0.7;
+}
+
+nav > section > ul > li:first-child:before, nav > section > ul > li:last-child:after {
+  opacity: 0;
 }
