@@ -1,5 +1,5 @@
 <div class="panel radius">
-  <div class="alert-box warning radius">
+  <div class="alert-box warning radius small-text-center">
     To enter the sweepstakes and win a trip to Istanbul, Turkey, simply <a href="#"><span class="radius secondary label">register here</span></a> and record a video!
   </div>
 
