@@ -3,10 +3,23 @@
   "version": "0.0.1",
   "description": "A Mimosa starter skeleton",
   "dependencies": {
-    "consolidate": "0.10.0",
-    "handlebars": "1.2.1",
+    "async": "latest",
+    "bcrypt": "latest",
     "coffee-script": "1.6.3",
-    "express": "3.4.7"
+    "connect-redis": "latest",
+    "consolidate": "0.10.0",
+    "express": "3.4.7",
+    "glob": "latest",
+    "handlebars": "1.2.1",
+    "hiredis": "latest",
+    "instagram-node-lib": "latest",
+    "lodash": "latest",
+    "moment": "latest",
+    "mongoose": "latest",
+    "redis": "latest",
+    "request": "latest",
+    "twit": "latest",
+    "winston": "latest"
   },
   "devDependencies": {
     "mimosa-coffeescript": "*",

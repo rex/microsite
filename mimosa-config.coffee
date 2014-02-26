@@ -13,10 +13,6 @@ exports.config =
     "sass"
     "handlebars"
   ]
-  server:
-    views:
-      compileWith: "handlebars"
-      extension: "hb"
 
   watch:
     sourceDir: "assets"
@@ -43,7 +39,7 @@ exports.config =
 
   server:
     defaultServer:
-      enabled: true
+      enabled: false
       onePager: true
 
     path: "app.coffee"

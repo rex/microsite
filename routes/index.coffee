@@ -1,4 +1,4 @@
-index = (config) ->
+module.exports = (config, app) ->
 
   options =
     reload:    config.liveReload.enabled
@@ -12,6 +12,4 @@ index = (config) ->
   else
     "index"
 
-  (req, res) -> res.render name, options
-
-exports.index = index
+  app.get '/', (req, res) -> res.render name, options
