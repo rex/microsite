@@ -12,4 +12,4 @@ module.exports = (config, app) ->
   else
     "index"
 
-  app.get '/', (req, res) -> res.render name, options
+  app.get '*', (req, res) -> res.render name, options

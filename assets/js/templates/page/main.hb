@@ -1,6 +1,6 @@
 {{> page/header}}
 {{> page/nav}}
 
-<div id="content">{{> index}}</div>
+<div id="content"></div>
 
 {{> page/footer}}

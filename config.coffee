@@ -43,8 +43,6 @@ app_config =
     access_token: process.env.TWITTER_ACCESS_TOKEN
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 
-console.log "MINISITE_ENV", process.env['MINISITE_ENV']
-
 switch process.env.MINISITE_ENV
   when "local"
     app_config.mongo =

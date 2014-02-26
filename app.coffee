@@ -38,15 +38,16 @@ exports.startServer = (config, callback) ->
         app.use express.urlencoded()
         app.use express.json()
         app.use express.methodOverride()
+        app.use express.cookieParser()
         app.use express.compress()
-        app.use config.server.base, app.router
+        # app.use config.server.base, app.router
         app.use express.static(config.watch.compiledDir)
 
         step.complete_major()
         done()
 
     initialize_redis_session: (done) ->
-      step.start_major()
+      step.start_major "Initializing Redis Sessions"
       Redis_Instance = require('./drivers/redis').instance
       unless Redis_Instance
         err = new Error "No Redis instance found"
@@ -69,6 +70,12 @@ exports.startServer = (config, callback) ->
       services.initialize (err) ->
         if err? then step.error err else step.complete_major()
         done err
+
+    load_routes: (done) ->
+      step.start_major "Loading routes"
+      routes  = require('./routes') config, app
+      step.complete_major()
+      done()
 
     attach_middleware: (done) ->
       step.start_major "Attaching application middleware"
@@ -99,12 +106,6 @@ exports.startServer = (config, callback) ->
 
       app.configure 'production', ->
 
-      step.complete_major()
-      done()
-
-    load_routes: (done) ->
-      step.start_major "Loading routes"
-      routes  = require('./routes') config, app
       step.complete_major()
       done()
 

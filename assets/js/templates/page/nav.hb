@@ -13,7 +13,7 @@
         <li><a href="#">Watch Videos</a></li>
         <li><a href="#">Social Shout</a></li>
         <li><a href="#">Vote</a></li>
-        <li><a href="#">My Youtoo Profile</a></li>
+        <li><a href="/login">My Youtoo Profile</a></li>
       </ul>
 
       {{!-- <ul class="right"></ul> --}}
